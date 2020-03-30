@@ -139,6 +139,7 @@ main {
     flex-direction: column;
     color: var(--secondary-color);
     width: 80%;
+    min-width: 1000px;
     margin: 4rem auto;
     gap: 4vw;
     position: relative;
