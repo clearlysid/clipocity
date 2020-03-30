@@ -8,6 +8,6 @@ window.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             header.classList.remove('fade');
             main.classList.remove('fade');
-        }, 3000);
+        }, 2000);
     });  
 });
