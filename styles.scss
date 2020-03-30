@@ -1,18 +1,23 @@
 * {
     margin: 0;
     padding: 0;
+    --primary-color: #22224a;
+    --secondary-color: #dcece8; 
+    --gradient-overlay: #00000060;
 }
 
-.body::-webkit-scrollbar {
-    display: none;
-  }
-
 body {
-    background-color: #341458;
+    background-color: var(--primary-color); 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+body.light {
+    --primary-color: #22224a;
+    --secondary-color: #dcece8; 
+    --gradient-overlay: #00000060;
 }
 
 header {
@@ -40,7 +45,6 @@ header {
 
     .user-profile {
         border-radius: 50%;
-        background-color: white;
         background-image: url(/assets/featured-creator.png);
         background-size: contain;
         height: 3rem;
@@ -64,10 +68,13 @@ header {
         padding: 0 10px;
         width: 40vmin;
         opacity: 0.4;
+        transition: opacity 0.4s ease;
+    }
+
+    input:focus, input:hover{
+        opacity: 1;
     }
 }
-
-
 
 
 .ft-video {
@@ -83,7 +90,7 @@ header {
         width: 100%;
         z-index: 1;
         position: absolute;
-        background-image: linear-gradient(#00000090 0% 40%, #341458 70% 100%);
+        background-image: linear-gradient(var(--gradient-overlay) 0% 40%, var(--primary-color) 70% 100%);
     }
 }
 
@@ -95,6 +102,7 @@ header {
     grid-template-columns: 2;
     grid-template-rows: 3;
     margin-left: 12rem;
+    color: var(--secondary-color);
 
     .ft-artist-image {
         grid-row: 1 / span 3;
@@ -105,35 +113,38 @@ header {
         height: 6rem;
         background-size: contain;
         margin-right: 2rem;
-
     }
 
     .ft-cotd {
         grid-row: 1;
         grid-column: 2;
         text-transform: uppercase;
-        color: wheat;
     }
     .ft-title {
         grid-row: 2;
         grid-column: 2;
-        color: wheat;
+        font-weight: 800;
     }
     .ft-artist {
         grid-row: 3;
         grid-column: 2;
-        color: wheat;
         text-transform: lowercase;
+        font-weight: 200;
     }
 }
 
 main {
     display: flex;
     flex-direction: column;
-    color: #2ea97e;
+    color: var(--secondary-color);
     width: 80%;
     margin: 4rem auto;
     gap: 4vw;
+    position: relative;
+}
+
+.section-title {
+    font-weight: 700;
 }
 
 .gallery {
@@ -147,15 +158,17 @@ main {
     width: 20vw;
     position: relative;
     display: grid;
-    margin-right: 4rem;
+    margin-right: 2rem;
     grid-template-columns: 5rem auto;
     grid-template-rows: 3;
 
-    img {
+    .video-item-thumbnail {
         grid-row: 1;
         grid-column: 1 / span 2;
         width: 100%;
+        height: 12vw;
         padding-bottom: 1rem;
+        transition: transform 0.2s ease;
     }
 
     .video-item-artist-image {
@@ -174,6 +187,7 @@ main {
     .video-item-artist-name {
         grid-row: 3;
         grid-column: 2;
+        font-weight: 200;
     }
 
     .video-item-title {
@@ -185,6 +199,9 @@ main {
 
 }
 
+.video-item:hover .video-item-thumbnail {
+    transform: scale(1.05);
+}
 
 
 
