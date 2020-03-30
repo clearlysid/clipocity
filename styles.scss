@@ -25,7 +25,7 @@ header {
     overflow: hidden;
     position: relative;
     width: 100%;
-    transition: opacity 1s ease;
+    transition: opacity 2s ease;
 }
 
 .top-bar {
@@ -46,7 +46,7 @@ header {
 
     .user-profile {
         border-radius: 50%;
-        background-image: url(/assets/featured-creator.png);
+        background-image: url(assets/featured-creator.png);
         background-size: contain;
         height: 3rem;
         width: 3rem;
@@ -108,7 +108,7 @@ header {
     .ft-artist-image {
         grid-row: 1 / span 3;
         grid-column: 1;
-        background-image: url(/assets/featured-creator.png);
+        background-image: url(assets/featured-creator.png);
         border-radius: 50%;
         width: 6rem;
         height: 6rem;
@@ -141,9 +141,10 @@ main {
     width: 80%;
     min-width: 1000px;
     margin: 4rem auto;
+    row-gap: 4vw;
     gap: 4vw;
     position: relative;
-    transition: transform 0.6s ease 1s, opacity 0.6s ease 1s;
+    transition: transform 0.6s ease 2s, opacity 0.6s ease 2s;
 }
 
 .section-title {
@@ -213,18 +214,6 @@ main.fade {
 header.fade {
     opacity: 0;
 }
-
-// .overlay {
-//     display: block;
-//     height: 100vh;
-//     width: 100vw;
-//     pointer-events: none;
-//     z-index: 10;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-// }
-
 
 
 
