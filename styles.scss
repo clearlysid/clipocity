@@ -2,8 +2,15 @@
     margin: 0;
     padding: 0;
     --primary-color: #22224a;
-    --secondary-color: #dcece8; 
+    --secondary-color: #dcece8;
+    --tertiary-color: #ffffff;
     --gradient-overlay: #00000060;
+
+    // --primary-color: #ebe7dc;
+    // --secondary-color: #121212;
+    // --tertiary-color: #000000;
+    // --gradient-overlay: #ffffff30;
+
 }
 
 body {
@@ -12,12 +19,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', 'Arial', sans-serif;
-}
-
-body.light {
-    --primary-color: #22224a;
-    --secondary-color: #dcece8; 
-    --gradient-overlay: #00000060;
 }
 
 header {
@@ -41,7 +42,7 @@ header {
     .logo {
         width: 200px;
         margin: 0.8rem;
-        fill: white;
+        fill: var(--tertiary-color);
     }
 
     .user-profile {
@@ -57,7 +58,7 @@ header {
 .search-box {
     margin: 1rem;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -67,8 +68,8 @@ header {
         height: 40px;
         border-radius: 50px;
         padding: 0 10px;
-        width: 40vmin;
-        opacity: 0.4;
+        width: 60vmin;
+        opacity: 0.6;
         transition: opacity 0.4s ease;
     }
 
@@ -98,11 +99,12 @@ header {
 .ft-metadata {
     position: absolute;
     bottom: 10%;
+    left: 10%;
     z-index: 2;
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: 3;
-    margin-left: 12rem;
+    margin: 0 auto;
     color: var(--secondary-color);
 
     .ft-artist-image {
@@ -154,7 +156,8 @@ main {
 .gallery {
     display: flex;
     flex-direction: row;
-    margin: 1rem 0;
+    margin: 2rem 0;
+    column-gap: 2vw;
     // position: absolute;
 }
 
@@ -162,8 +165,7 @@ main {
     width: 20vw;
     position: relative;
     display: grid;
-    margin-right: 2rem;
-    grid-template-columns: 5rem auto;
+    grid-template-columns: 5rem, auto;
     grid-template-rows: 3;
 
     .video-item-thumbnail {
@@ -216,6 +218,37 @@ header.fade {
 }
 
 
+.creator-gallery {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem auto;
+    justify-content: space-between;
+    column-gap: 6vw;
+
+}
+
+.creator {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.2s ease;
+    
+    .creator-thumbnail {
+        width: 200px;
+        height: 200px;
+        border-radius: 80%;
+    }
+
+    h4 {
+        padding-top: 1rem;
+        font-weight: 200;
+        font-size: 18px;
+    }
+}
+
+.creator:hover {
+    transform: scale(1.05);
+}
 
 
 
