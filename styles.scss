@@ -1,34 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #341458;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 header {
-    height: 60vh;
+    height: 40vw;
     overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 .top-bar {
     width: 100vw;
-    background-image: linear-gradient(#00000080 0% 40%, #34145800 100%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     z-index: 2;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
     .logo {
         width: 200px;
-        margin: 10px;
+        margin: 0.8rem;
         fill: white;
     }
 
     .search-box {
-        margin: 10px;
+        margin: 1rem;
 
         input {
             border: none;
@@ -43,22 +50,74 @@ header {
     .user-profile {
         border-radius: 50%;
         background-color: white;
-        height: 42px;
-        width: 42px;
-        margin: 10px;
+        background-image: url(/assets/featured-creator.png);
+        background-size: contain;
+        height: 3rem;
+        width: 3rem;
+        margin: 1rem;
     }
 }
 
 .ft-video {
-    overflow: hidden;
+    width: 100%;
+    position: absolute;
+
+    video {
+        width: 100vw;
+    }
 
     .ft-overlay {
         height: 100%;
         width: 100%;
-        // position: absolute;
-        background-color: black;
-        // opacity: 40%;
+        z-index: 1;
+        position: absolute;
+        background-image: linear-gradient(#00000090 0% 40%, #341458 70% 100%);
     }
+}
+
+.ft-metadata {
+    position: absolute;
+    bottom: 10%;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    margin-left: 12rem;
+
+    .ft-artist-image {
+        grid-row: 1 / span 3;
+        grid-column: 1;
+        background-image: url(/assets/featured-creator.png);
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        background-size: contain;
+        margin-right: 2rem;
+
+    }
+
+    h3 {
+        grid-row: 1;
+        grid-column: 2;
+        text-transform: uppercase;
+        color: wheat;
+    }
+    h1 {
+        grid-row: 2;
+        grid-column: 2;
+        color: wheat;
+    }
+    h2 {
+        grid-row: 3;
+        grid-column: 2;
+        color: wheat;
+        text-transform: lowercase;
+    }
+}
+
+main {
+    display: grid;
+    color: #2ea97e;
 }
 
 
