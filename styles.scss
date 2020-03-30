@@ -25,6 +25,7 @@ header {
     overflow: hidden;
     position: relative;
     width: 100%;
+    transition: opacity 1s ease;
 }
 
 .top-bar {
@@ -141,6 +142,7 @@ main {
     margin: 4rem auto;
     gap: 4vw;
     position: relative;
+    transition: transform 0.6s ease 1s, opacity 0.6s ease 1s;
 }
 
 .section-title {
@@ -195,14 +197,32 @@ main {
         grid-column: 2;
     }
 
-
-
 }
 
 .video-item:hover .video-item-thumbnail {
     transform: scale(1.05);
 }
 
+
+main.fade {
+    opacity: 0;
+    transform: translateY(+10%);
+}
+
+header.fade {
+    opacity: 0;
+}
+
+// .overlay {
+//     display: block;
+//     height: 100vh;
+//     width: 100vw;
+//     pointer-events: none;
+//     z-index: 10;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+// }
 
 
 
