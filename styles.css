@@ -412,7 +412,8 @@ header.fade {
   }
   header {
     height: 50vh;
-    overflow: initial;
+    overflow-y: initial;
+    overflow-x: hidden;
   }
   .ft-video video {
     width: auto;
