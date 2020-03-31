@@ -104,7 +104,7 @@ header {
         height: 2.5rem;
         border-radius: 2rem;
         padding: 0 2rem;
-        width: 60vmin;
+        width: 40vw;
         opacity: 0.6;
         transition: opacity 0.4s ease;
         font-size: 1.1rem;
@@ -355,7 +355,7 @@ header.fade {
     }
 
     .search-box input {
-        width: 50vmin;
+        width: 50vw;
     }
 }
 
