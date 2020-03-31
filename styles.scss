@@ -337,15 +337,19 @@ header.fade {
         // }
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         height: 50vh;
-        overflow-y: auto;
-        overflow-x: hidden;
+        overflow: visible;
     }
 
     .ft-video video {
         width: auto;
         height: 100vh;
+        overflow: hidden;
     }
 
     .search-box input {

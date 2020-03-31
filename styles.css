@@ -410,14 +410,17 @@ header.fade {
   .ft-metadata .ft-artist {
     font-size: 1rem;
   }
+  body {
+    overflow-x: hidden;
+  }
   header {
     height: 50vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: visible;
   }
   .ft-video video {
     width: auto;
     height: 100vh;
+    overflow: hidden;
   }
   .search-box input {
     width: 50vmin;
