@@ -26,6 +26,8 @@ A quick sketch of where I wanted to place things, before I actually started to c
 
 ![Wireframe](submission/wireframe.png)
 
+![Wireframe](submission/wireframe-mobile.jpg)
+
 
 ### Features that were fun to code
 * Initial fade in animation
