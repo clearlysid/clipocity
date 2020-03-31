@@ -1,5 +1,6 @@
 const header = document.getElementsByTagName('header')[0];
 const main = document.getElementsByTagName('main')[0];
+const modeSwitch = document.getElementById('mode-switch');
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -11,3 +12,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 2000);
     });  
 });
+
+modeSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+    document.body.classList.toggle('dark');
+    modeSwitch.classList.toggle('on');
+})
