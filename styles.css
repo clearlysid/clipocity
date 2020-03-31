@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .dark {
@@ -67,10 +67,11 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 4;
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
+  pointer-events: all;
 }
 
 .top-bar .logo {
@@ -122,14 +123,11 @@ header {
 .search-box {
   margin: 1rem;
   position: fixed;
-  z-index: 3;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  z-index: 4;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .search-box input {
@@ -257,7 +255,13 @@ main > div {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 2rem 0;
-  overflow-x: auto;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  overflow-x: scroll;
+}
+
+.gallery::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 .video-item {
@@ -319,8 +323,8 @@ main > div {
 }
 
 .video-item:hover .video-item-thumbnail {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scaleX(1.05);
+          transform: scaleX(1.05);
 }
 
 main.fade {
@@ -362,8 +366,8 @@ header.fade {
 }
 
 .creator:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scaleX(1.05);
+          transform: scaleX(1.05);
 }
 
 @media only screen and (max-width: 1200px) {

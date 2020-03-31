@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .dark {
@@ -48,10 +48,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 4;
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
+    pointer-events: all;
 
     .logo {
         width: 12.5rem;
@@ -95,10 +96,10 @@ header {
 .search-box {
     margin: 1rem;
     position: fixed;
-    z-index: 3;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    z-index: 4;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
     input {
         border: none;
@@ -186,7 +187,6 @@ main {
 
 main > div {
     margin: 2rem 0;
-    
 }
 
 .section-title {
@@ -199,8 +199,12 @@ main > div {
     display: flex;
     flex-direction: row;
     margin: 2rem 0;
-    overflow-x: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    overflow-x: scroll;
 }
+
+.gallery::-webkit-scrollbar { width: 0 !important }
 
 .video-item {
     width: 16rem;
@@ -244,7 +248,7 @@ main > div {
 }
 
 .video-item:hover .video-item-thumbnail {
-    transform: scale(1.05);
+    transform: scaleX(1.05);
 }
 
 
@@ -278,7 +282,7 @@ header.fade {
 }
 
 .creator:hover {
-    transform: scale(1.05);
+    transform: scaleX(1.05);
 }
 
 @media only screen and (max-width: 1200px) {
