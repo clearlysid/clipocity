@@ -338,7 +338,9 @@ header.fade {
     }
 
     body {
-        overflow-x: hidden;
+        overflow-x: clip;
+        width: 100vw;
+        max-width: 100vw;
     }
 
     header {
@@ -347,8 +349,8 @@ header.fade {
     }
 
     .ft-video video {
-        width: auto;
-        height: 100vh;
+        height: auto;
+        width: 100vw;
         overflow: hidden;
     }
 

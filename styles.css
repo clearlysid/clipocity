@@ -411,15 +411,17 @@ header.fade {
     font-size: 1rem;
   }
   body {
-    overflow-x: hidden;
+    overflow-x: clip;
+    width: 100vw;
+    max-width: 100vw;
   }
   header {
     height: 50vh;
     overflow: visible;
   }
   .ft-video video {
-    width: auto;
-    height: 100vh;
+    height: auto;
+    width: 100vw;
     overflow: hidden;
   }
   .search-box input {
