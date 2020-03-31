@@ -40,5 +40,7 @@ A quick sketch of where I wanted to place things, before I actually started to c
   * Should have just used javascript objects to insert content in placeholders.
 * Learnt that CSS gradients cannot be transitioned :(
 * Keeping track of z-indexes is a huge pain!
+* Scaling the featured video with CSS didn't work out the way I thought it would
+  * Implemented a temporary Javascript fix, but it still needs more work.
 
 
