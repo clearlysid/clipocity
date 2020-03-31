@@ -1,5 +1,5 @@
 # Cliporama
-A simple video-sharing platform homepage.
+A simple video-sharing platform homepage. I made heavy use of both Flexbox and Grid for this one. Some very very basic Javascript to make a fade-in-on-page-load effect and to toggle classes for switching light/dark modes. Works well across most devices.
 
 ### Repo Contains
 1. Source Code for the homepage
@@ -12,11 +12,11 @@ A simple video-sharing platform homepage.
 ### Result
 Fairly satisfied with a good few hours of work, though there's a lot that can be done better.
 
-<img src="submission/mobile.gif" width="100%">
-
-![Quick Show](submission/final.gif)
+<img src="submission/final.gif" width="100%">
 
 ![Desktop Homepage](submission/dark-home.jpg)
+
+<img src="submission/mobile.gif" width="100%">
 
 ![Lovely Lightmode](submission/light-mode.png)
 
