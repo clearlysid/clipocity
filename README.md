@@ -12,7 +12,7 @@ A simple video-sharing platform homepage.
 ### Result
 Fairly satisfied with a good few hours of work, though there's a lot that can be done better.
 
-![Quick Sho2w](submission/mobile.gif){:height="auto" width="100%"}
+<img src="submission/mobile.gif" width="100%">
 
 ![Quick Show](submission/final.gif)
 
