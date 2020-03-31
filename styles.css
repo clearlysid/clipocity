@@ -153,12 +153,13 @@ header {
 
 .ft-video video {
   width: 100vw;
+  z-index: -1;
 }
 
 .ft-video .ft-overlay {
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 0;
   position: absolute;
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-overlay)), color-stop(70%, var(--primary-color)));
   background-image: linear-gradient(var(--gradient-overlay) 0% 40%, var(--primary-color) 70% 100%);
@@ -382,6 +383,49 @@ header.fade {
   }
   .top-bar .logo .square-logo {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  * {
+    font-size: 16px;
+  }
+  .ft-metadata {
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
+    z-index: 3;
+  }
+  .ft-metadata .ft-artist-image {
+    width: 12vw;
+    height: 12vw;
+    margin-right: 1rem;
+  }
+  .ft-metadata .ft-cotd {
+    font-size: 0.8rem;
+  }
+  .ft-metadata .ft-title {
+    font-size: 1.2rem;
+  }
+  .ft-metadata .ft-artist {
+    font-size: 1rem;
+  }
+  header {
+    height: 50vh;
+    overflow: initial;
+  }
+  .ft-video video {
+    width: auto;
+    height: 100vh;
+  }
+  .search-box input {
+    width: 50vmin;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #mode-switch {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */

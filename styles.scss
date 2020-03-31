@@ -33,8 +33,6 @@ body {
     font-size: 1rem;
 }
 
-
-
 header {
     height: 40vw;
     overflow: hidden;
@@ -124,12 +122,13 @@ header {
 
     video {
         width: 100vw;
+        z-index: -1;
     }
 
     .ft-overlay {
         height: 100%;
         width: 100%;
-        z-index: 1;
+        z-index: 0;
         position: absolute;
         background-image: linear-gradient(var(--gradient-overlay) 0% 40%, var(--primary-color) 70% 100%);
     }
@@ -297,4 +296,65 @@ header.fade {
         .square-logo {display: block;}
     }
 
+}
+
+@media only screen and (max-width: 800px) {
+
+    * {
+        font-size: 16px;
+    }
+
+    .ft-metadata {
+        position: absolute;
+        bottom: -10%;
+        left: 10%;
+        z-index: 3;
+    
+        .ft-artist-image {
+            width: 12vw;
+            height: 12vw;
+            margin-right: 1rem;
+        }
+    
+        .ft-cotd {font-size: 0.8rem;} // 12px, max 18px
+        .ft-title {font-size: 1.2rem;} // ~20px, max 32px
+        .ft-artist {font-size: 1rem;} // 16px, max 18px
+
+        // just tried some experiments with variable font sizing, please ignore
+        // .ft-cotd {font-size: calc(3.7vw);}
+        // .ft-title {font-size: calc(6.2vw);}
+        // .ft-artist {font-size: calc(5vw);}
+
+        // .ft-cotd {
+        //     font-size: min(max(12px, 3.7vw), 18px);
+        // }
+
+        // .ft-title {
+        //     font-size: min(max(20px, 6.2vw), 32px);
+        // }
+        // .ft-artist {
+        //     font-size: min(max(16px, 5vw), 18px);
+        // }
+    }
+
+    header {
+        height: 50vh;
+        overflow: initial;
+    }
+
+    .ft-video video {
+        width: auto;
+        height: 100vh;
+    }
+
+    .search-box input {
+        width: 50vmin;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    #mode-switch {
+        display: none;
+    }
 }
