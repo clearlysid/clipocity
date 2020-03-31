@@ -33,9 +33,10 @@ function changeVideoSource() {
 }
 
 
-window.addEventListener("resize", changeVideoSource);
+// window.addEventListener("resize", changeVideoSource);
 
 // the above line does work, but cause flickering as the browser is being resized.
-// If I was deploying to production, I think I would omit the line and maybe use a variable to detect the state change
+// I decided to omit it, as most users wouldn't really be resizing their screen all that often.
+// a simple page refresh does fix the src anyway..
 
 changeVideoSource();
