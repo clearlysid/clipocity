@@ -26,7 +26,7 @@ A quick sketch of where I wanted to place things, before I actually started to c
 
 ![Wireframe](submission/wireframe.png)
 
-![Wireframe](submission/wireframe-mobile.jpg)
+![Wireframe](submission/wireframe-mobile.png)
 
 
 ### Features that were fun to code
