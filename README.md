@@ -1,5 +1,5 @@
-# Cliporama
-A simple video-sharing platform homepage. I made heavy use of both Flexbox and Grid for this one. Some very very basic Javascript to make a fade-in-on-page-load effect and to toggle classes for switching light/dark modes. Works well across most devices.
+# Cliporama (clip-o-rama)
+A simple video-sharing platform homepage. I made heavy use of both Flexbox and Grid for this one along with some super-simple Javascript to make a "fade-in-on-page-load" effect and to toggle classes for switching light/dark modes. It works pretty well across most devices, and was really fun to build!
 
 ### Repo Contains
 1. Source Code for the homepage
