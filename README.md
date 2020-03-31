@@ -11,11 +11,7 @@ A simple video-sharing platform homepage.
 ## Result
 Fairly satisfied with a good few hours of work, though there's a lot that can be done better.
 
-
-![GitHub Logo](/images/logo.png)
-![GitHub Logo](/images/logo.png)
-![GitHub Logo](/images/logo.png)
-![GitHub Logo](/images/logo.png)
+![Final Result!](/submission/dark-home.png)
 
 
 
