@@ -12,7 +12,7 @@ A simple video-sharing platform homepage.
 ### Result
 Fairly satisfied with a good few hours of work, though there's a lot that can be done better.
 
-![Quick Sho2w](https://im7.ezgif.com/tmp/ezgif-7-3c7a194c059b.gif)
+![Quick Sho2w](https://im7.ezgif.com/tmp/ezgif-7-86749a77b283.gif)
 
 ![Quick Show](submission/final.gif)
 
