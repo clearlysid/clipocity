@@ -2,22 +2,28 @@
 A simple video-sharing platform homepage.
 
 ### Repo Contains
-* Source Code for the homepage
-* All Assets used
-* imagesloaded library
-* Rough Draft Sketches
-* Screenshots of Homepage
-
-###
-![Wireframe](submission/wireframe.png)
+1. Source Code for the homepage
+2. All Assets used
+3. imagesloaded library
+    - non-essential, but I used this tiny library to check if images have been loaded
+4. Rough Draft Sketches
+5. Screenshots of Homepage
 
 ### Result
 Fairly satisfied with a good few hours of work, though there's a lot that can be done better.
 
-![Desktop Homepage](submission/dark-home.png)
-![Mobile Homepage](submission/mobile-home.png)
+![Quick Show](submission/final.gif)
+
+![Desktop Homepage](submission/dark-home.jpg)
+
 ![Lovely Lightmode](submission/light-mode.png)
+
 ![Horizontal Scrolling](submission/horizontal-scrolling.png)
+
+A quick sketch of where I wanted to place things, before I actually started to code.
+
+![Wireframe](submission/wireframe.png)
+
 
 ### Features that were fun to code
 * Initial fade in animation
